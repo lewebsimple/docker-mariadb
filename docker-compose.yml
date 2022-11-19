@@ -12,7 +12,7 @@ services:
       - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD-changeme}
       - TZ=${TZ-America/Toronto}
     ports:
-      - '3307:3306'
+      - '3306:3306'
     volumes:
       - ${DATA-./data}/mariadb/conf.d:/etc/mysql/conf.d
       - ${DATA-./data}/mariadb/data:/var/lib/mysql
